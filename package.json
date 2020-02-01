@@ -11,10 +11,24 @@
   "author": "Dennis Wirya <dwirya@outlook.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "ts-node-dev --no-notify --respawn --transpileOnly --project tsconfig.json src/index.ts",
+    "prod": "sudo pm2 start ts-node -- --transpile-only --project tsconfig.json src/index.ts",
+    "generate:prisma": "prisma2 generate",
+    "generate:nexus": "ts-node --transpile-only src/graphql/schema.ts",
+    "generate": "yarn -s run generate:prisma && yarn -s run generate:nexus",
+    "postinstall": "yarn -s run generate"
+  },
   "dependencies": {
-    "@prisma/client": "^2.0.0-preview021"
+    "@prisma/client": "^2.0.0-preview021",
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3",
+    "nexus": "^0.12.0-rc.9"
   },
   "devDependencies": {
-    "prisma2": "^2.0.0-preview021"
+    "prisma2": "^2.0.0-preview021",
+    "ts-node": "^8.6.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "api",
+      "interpreter": "ts-node",
+      "script": "./src/index.ts"
+    }
+  ]
+}

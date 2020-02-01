@@ -10,5 +10,11 @@
   "homepage": "https://github.com/cissa-opensource/wuhan2020-api",
   "author": "Dennis Wirya <dwirya@outlook.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@prisma/client": "^2.0.0-preview021"
+  },
+  "devDependencies": {
+    "prisma2": "^2.0.0-preview021"
+  }
 }

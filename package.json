@@ -1,0 +1,14 @@
+{
+  "name": "wuhan2020-api",
+  "version": "1.0.0",
+  "description": "This repository is the data source for the English website version of Wuhan2020.",
+  "main": "src/index.js",
+  "repository": "https://github.com/cissa-opensource/wuhan2020-api.git",
+  "bugs": {
+    "url": "https://github.com/cissa-opensource/wuhan2020-api/issues"
+  },
+  "homepage": "https://github.com/cissa-opensource/wuhan2020-api",
+  "author": "Dennis Wirya <dwirya@outlook.com>",
+  "license": "MIT",
+  "private": false
+}
